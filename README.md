@@ -1,6 +1,6 @@
 # k3s terraform proxmox ansible
 
-Will publish step by step totorials and update this readme soon.
+Will publish step by step tutorials and update this readme soon.
 
 Ref: 
 - 🔗https://github.com/sguyennet/terraform-vsphere-kubespray
