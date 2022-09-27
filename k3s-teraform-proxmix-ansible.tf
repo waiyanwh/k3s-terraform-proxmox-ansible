@@ -8,9 +8,9 @@ resource "proxmox_vm_qemu" "master" {
   clone = "ubuntu-20.04-cloudimg"
 
 
-  cores = var.cores
+  cores = var.master_cores
   sockets = 1
-  memory = var.memory
+  memory = var.master_memory
 
 	disk {
 		slot = 0
@@ -42,9 +42,9 @@ resource "proxmox_vm_qemu" "worker" {
   clone = "ubuntu-20.04-cloudimg"
 
 
-  cores = var.cores
+  cores = var.master_cores
   sockets = 1
-  memory = var.memory
+  memory = var.worker_memory
 
 	disk {
 		slot = 0

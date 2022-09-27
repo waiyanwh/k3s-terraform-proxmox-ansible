@@ -10,16 +10,28 @@ variable "proxmox_password" {
   description = "Proxmox password"
 }
 
-variable "cores" {
+variable "master_cores" {
   description = "number of cores to give each vm"
   type = number
   default = 2
 }
 
-variable "memory" {
+variable "master_memory" {
   description = "amount of memory in MB give each vm"
   type = number
   default = 2048
+}
+
+variable "worker_cores" {
+  description = "number of cores to give each vm"
+  type = number
+  default = 2
+}
+
+variable "worker_memory" {
+  description = "amount of memory in MB give each vm"
+  type = number
+  default = 4098
 }
 
 variable "sshkeys" {
